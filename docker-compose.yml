@@ -4,15 +4,15 @@ services:
 
   apache:
 
-    container_name: apache_server
-    image: httpd
+    container_name: apache_server #nombre del contenedor creado
+    image: httpd #imagen a utilizar
     networks:
       nt01:
-        ipv4_address: 10.0.0.100
+        ipv4_address: 10.0.0.100 #ip con la que se crea
     ports:
       - 80:80
     volumes:
-      - configuracionweb:/usr/local/apache2/htdocs
+      - configuracionweb:/usr/local/apache2/htdocs #nombre del volumen y lo que se guarda
 
   bind9:
     container_name: bind9_server
@@ -37,11 +37,11 @@ services:
     dns:
       - 10.0.0.250 
     environment:
-      - VNC_PW= abc123.
+      - VNC_PW= abc123. #el enviroment para controlar el escritorio 
 
 volumes:
   configuracionweb:
-    external: true
+    external: true #Declaración de los volumenes que son externos
   configuraciondns:
     external: true
 
