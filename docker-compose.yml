@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+
+  apache:
+
+    container_name: apache_server
+    image: httpd:latest
+    networks:
+      nt01:
+        ipv4_address: 100.0.0.10
+    ports:
+      - 80:80
+    volumes:
+      - configuracionweb:/usr/local/apache2/
+
