@@ -37,7 +37,7 @@ services:
     dns:
       - 10.0.0.250 
     environment:
-      - VNC_PW= abc123. #el enviroment para controlar el escritorio 
+      VNC_PW: password #el enviroment para controlar el escritorio 
 
 volumes:
   configuracionweb:
