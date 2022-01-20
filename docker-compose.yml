@@ -13,6 +13,7 @@ services:
       - 80:80
     volumes:
       - configuracionweb:/usr/local/apache2/htdocs #nombre del volumen y lo que se guarda
+      - configuracionapache:/usr/local/apache2/conf
 
   bind9:
     container_name: bind9_server
@@ -40,6 +41,8 @@ services:
       VNC_PW: password #el enviroment para controlar el escritorio 
 
 volumes:
+  configuracionapache:
+    external: true
   configuracionweb:
     external: true #Declaración de los volumenes que son externos
   configuraciondns:
