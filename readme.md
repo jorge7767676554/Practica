@@ -35,3 +35,11 @@ CERTIFICADO SSL
 
 -Para mover los archivos generados a la ruta de configuracion de apache utilizamos docker cp.
 
+-Descomentar las lineas del vhosts en el httpd conf.
+
+-Importante SSL Engine ON
+
+-En SSL Certificate hay que cambiar el nombre de los .crt y .key a los nombres de nuestros archivos 
+
+-Para comprobar logueamos con https://hola.practica.com y vemos que existe el certificado aunque no esté validado. 
+
