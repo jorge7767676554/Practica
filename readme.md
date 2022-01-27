@@ -41,5 +41,7 @@ CERTIFICADO SSL
 
 -En SSL Certificate hay que cambiar el nombre de los .crt y .key a los nombres de nuestros archivos 
 
--Para comprobar logueamos con https://hola.practica.com y vemos que existe el certificado aunque no esté validado. 
+-Para comprobar logueamos con https://hola.practica.com y vemos que existe el certificado aunque no esté validado.
+
+
 
