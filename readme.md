@@ -27,3 +27,11 @@ adios       IN CNAME hola.practica.com.
 Para acceder al cliente kasm, en el navegador web local, escribimos https://127.0.0.1:6901/  y la contraseña es "password" que pusimos en el docker compose. Y accedemos al entorno del kasm.
 
 Para abrir el index.html del virutal host escribimos en este caso hola.practica.com para acceder con el virtual host. Y se abre el index.html
+
+
+CERTIFICADO SSL
+
+-Para generar el .key y .crt lo hacemos con el comando sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /home/asir2a/Escritorio/apache-selfsigned.key -out /home/asir2a/Escritorio/apache-selfsigned.crt
+
+-Para mover los archivos generados a la ruta de configuracion de apache utilizamos docker cp.
+
